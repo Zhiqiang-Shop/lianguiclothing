@@ -7,7 +7,6 @@
     <meta name="description" content="Lian Gui Clothing - professional wholesale shirts supplier based in Guangzhou. Fast DHL & postal shipping to Europe, full tracking, 9-12 days delivery. Contact us for bulk orders.">
     <meta name="keywords" content="wholesale shirts, men shirts, women blouses, shirt supplier Europe, bulk order shirts, DHL shipping China">
     <meta name="author" content="Lian Gui Clothing">
-    <!-- Google Fonts + Font Awesome -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -16,7 +15,6 @@
             padding: 0;
             box-sizing: border-box;
         }
-
         body {
             font-family: 'Inter', sans-serif;
             background-color: #ffffff;
@@ -24,14 +22,11 @@
             line-height: 1.5;
             scroll-behavior: smooth;
         }
-
         .container {
             max-width: 1280px;
             margin: 0 auto;
             padding: 0 24px;
         }
-
-        /* Header & Nav */
         .navbar {
             display: flex;
             justify-content: space-between;
@@ -40,7 +35,6 @@
             flex-wrap: wrap;
             gap: 20px;
         }
-
         .logo h1 {
             font-size: 1.8rem;
             font-weight: 700;
@@ -55,9 +49,7 @@
             font-weight: 400;
             color: #5f6c7a;
             display: block;
-            letter-spacing: 0;
         }
-
         .nav-links {
             display: flex;
             gap: 32px;
@@ -72,8 +64,6 @@
         .nav-links a:hover {
             color: #c97e3f;
         }
-
-        /* Buttons & global */
         .btn-primary {
             background-color: #c97e3f;
             color: white;
@@ -106,9 +96,6 @@
             background: #c97e3f;
             color: white;
         }
-        section {
-            padding: 70px 0;
-        }
         .section-title {
             font-size: 2rem;
             font-weight: 700;
@@ -120,8 +107,6 @@
             max-width: 680px;
             margin-bottom: 48px;
         }
-
-        /* Hero */
         .hero {
             background: linear-gradient(120deg, #f9f6ef 0%, #f0ebe1 100%);
             border-radius: 32px;
@@ -170,8 +155,6 @@
             object-fit: cover;
             display: block;
         }
-
-        /* Product Grid - 8 items */
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -197,9 +180,6 @@
             display: flex;
             align-items: center;
             justify-content: center;
-            color: #8f9b9e;
-            font-size: 0.85rem;
-            text-align: center;
             overflow: hidden;
         }
         .product-img img {
@@ -249,8 +229,6 @@
             background: #c97e3f;
             color: white;
         }
-
-        /* Features */
         .features {
             background: #f8f7f3;
             border-radius: 32px;
@@ -272,8 +250,6 @@
             color: #c97e3f;
             margin-bottom: 16px;
         }
-
-        /* Contact + Office */
         .contact-wrapper {
             display: flex;
             flex-wrap: wrap;
@@ -419,7 +395,7 @@
 </header>
 
 <main>
-    <!-- Hero section with AAAA image -->
+    <!-- Hero section with AAAA image (root path) -->
     <div class="container" id="home">
         <div class="hero">
             <div class="hero-content">
@@ -434,20 +410,20 @@
                 </div>
             </div>
             <div class="hero-image">
-                <img src="images/AAAAjpg" alt="Lian Gui Clothing - Premium Shirt Manufacturer" onerror="this.onerror=null; this.src='https://placehold.co/600x800/dfd8cd/8F7A62?text=LIAN+GUI';">
+                <!-- 图片路径改为根目录的 AAAAjpg (根据您的文件列表，没有扩展名) -->
+                <img src="AAAAjpg" alt="Lian Gui Clothing - Premium Shirt Manufacturer" onerror="this.onerror=null; this.src='https://placehold.co/600x800/dfd8cd/8F7A62?text=LIAN+GUI';">
             </div>
         </div>
     </div>
 
-    <!-- Product Section - 8 products with exact image names -->
+    <!-- Product Section - 8 products, images in root directory (same as your uploaded files) -->
     <div class="container" id="products">
         <div class="section-title">Our premium shirt collection</div>
         <div class="section-sub">High-quality fabrics, timeless designs — perfect for retail & wholesale. Click "Request Quote" for bulk pricing.</div>
         <div class="product-grid">
-            <!-- 1. Classic Oxford Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="images/Classic Oxford Shirt.jpg" alt="Classic Oxford Shirt">
+                    <img src="Classic Oxford Shirt.jpg" alt="Classic Oxford Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">Bestseller</span>
@@ -456,10 +432,9 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- 2. Linen Summer Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="images/Linen Summer Shirt.jpg" alt="Linen Summer Shirt">
+                    <img src="Linen Summer Shirt.jpg" alt="Linen Summer Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">New</span>
@@ -468,10 +443,9 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- 3. Slim Fit Dress Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="images/Slim Fit Dress Shirt.jpg" alt="Slim Fit Dress Shirt">
+                    <img src="Slim Fit Dress Shirt.jpg" alt="Slim Fit Dress Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">Popular</span>
@@ -480,10 +454,9 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- 4. Check Casual Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="images/Check Casual Shirt.jpg" alt="Check Casual Shirt">
+                    <img src="Check Casual Shirt.jpg" alt="Check Casual Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">Trend</span>
@@ -492,10 +465,9 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- 5. Washed Denim Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="images/Washed Denim Shirt.jpg" alt="Washed Denim Shirt">
+                    <img src="Washed Denim Shirt.jpg" alt="Washed Denim Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">Essential</span>
@@ -504,10 +476,9 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- 6. Silk Blend Blouse -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="images/Silk Blend Blouse.jpg" alt="Silk Blend Blouse">
+                    <img src="Silk Blend Blouse.jpg" alt="Silk Blend Blouse">
                 </div>
                 <div class="product-info">
                     <span class="badge">Exclusive</span>
@@ -516,10 +487,9 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- 7. Striped Business Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="images/Striped Business Shirt.jpg" alt="Striped Business Shirt">
+                    <img src="Striped Business Shirt.jpg" alt="Striped Business Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">Office</span>
@@ -528,10 +498,9 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- 8. Flannel Heavy Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="images/Flannel Heavy Shirt.jpg" alt="Flannel Heavy Shirt">
+                    <img src="Flannel Heavy Shirt.jpg" alt="Flannel Heavy Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">Winter</span>
@@ -546,7 +515,7 @@
         </div>
     </div>
 
-    <!-- Features + shipping highlights -->
+    <!-- Features / Shipping Highlights (same as before, unchanged) -->
     <div class="container features" style="margin-top: 20px;">
         <div class="features-grid">
             <div class="feature-item"><i class="fas fa-truck-fast"></i><h3>DHL & Postal Shipping</h3><p>Express 9-12 days to EU, fully tracked</p></div>
@@ -588,36 +557,17 @@
         </div>
     </div>
 
-    <!-- Policies section (all formal policies) -->
+    <!-- Policies -->
     <div class="container" id="policies">
         <div class="policy-section">
             <div class="section-title">Official policies</div>
             <div class="policy-grid">
-                <div class="policy-card">
-                    <h3>📦 Shipping policy</h3>
-                    <p><strong>Carriers:</strong> DHL Express, China Post Air Mail, or any client-specified courier (upon arrangement).<br>
-                    <strong>Delivery time:</strong> 9-12 working days after dispatch (tracking number provided).<br>
-                    <strong>Tracking:</strong> End-to-end tracking available via email notification.<br>
-                    <strong>Dispatch origin:</strong> Guangzhou, China.<br>
-                    <strong>International taxes:</strong> Buyers are responsible for any import duties/VAT applied by destination country.<br>
-                    For urgent orders, DHL express recommended. For customer-specified carriers, please contact our team to coordinate pickup/shipment.</p>
-                </div>
-                <div class="policy-card">
-                    <h3>🔄 Return & exchange</h3>
-                    <p>We stand behind quality. If you receive defective or wrong items, contact us within 14 days of delivery. Returns are accepted for manufacturing defects only. We do not accept returns for change of mind due to wholesale nature. Return shipping cost is covered by Lian Gui Clothing only when defect is verified. Prior to returning, a Return Authorization (RA) is required. Refunds or replacements processed within 7 business days after inspection.</p>
-                </div>
-                <div class="policy-card">
-                    <h3>🔒 Privacy policy (GDPR compliant)</h3>
-                    <p>We collect name, email, and address information solely for order processing, shipping, and communication. Your data is never sold to third parties. We use SSL encryption and secure servers. You have the right to request data deletion. For any inquiries, email <a href="mailto:1277028772@qq.com">1277028772@qq.com</a>. By using our website, you consent to this privacy policy.</p>
-                </div>
-                <div class="policy-card">
-                    <h3>📄 Terms of service</h3>
-                    <p>All wholesale orders are subject to our invoice terms. MOQ can be discussed based on style. Payments via T/T bank transfer, PayPal, or wire transfer. Prices exclude shipping costs. We reserve the right to update policies. Orders are confirmed upon written agreement. By placing an order, you accept our Terms of Service. Disputes governed by Guangzhou laws.</p>
-                </div>
+                <div class="policy-card"><h3>📦 Shipping policy</h3><p><strong>Carriers:</strong> DHL Express, China Post Air Mail, or any client-specified courier.<br><strong>Delivery time:</strong> 9-12 working days after dispatch.<br><strong>Tracking:</strong> End-to-end tracking available.<br><strong>Dispatch origin:</strong> Guangzhou, China.<br><strong>International taxes:</strong> Buyer's responsibility.<br>Customer-specified carriers are welcome.</p></div>
+                <div class="policy-card"><h3>🔄 Return & exchange</h3><p>Defective items: contact within 14 days. Return shipping covered by us if defect verified. No change-of-mind returns for wholesale. RA required.</p></div>
+                <div class="policy-card"><h3>🔒 Privacy policy (GDPR compliant)</h3><p>We collect only necessary data for order processing and shipping. Data never sold. You may request deletion. Email 1277028772@qq.com for inquiries.</p></div>
+                <div class="policy-card"><h3>📄 Terms of service</h3><p>All orders subject to invoice terms. Payment via T/T, PayPal. Prices exclude shipping. By ordering you accept these terms. Disputes governed by Guangzhou laws.</p></div>
             </div>
-            <div style="margin-top: 32px; background:#F3F0EA; border-radius: 24px; padding: 20px;">
-                <p><strong>📞 Additional information:</strong> We support both DHL and Postal services, and we can also arrange shipments using your preferred carrier account (DHL, UPS, FedEx, etc). All packages are fully trackable from our warehouse to your doorstep. For any special request, please contact our team directly. European customers benefit from our streamlined customs documentation.</p>
-            </div>
+            <div style="margin-top: 32px; background:#F3F0EA; border-radius: 24px; padding: 20px;"><p><strong>📞 Additional information:</strong> DHL, Postal, or your own carrier account. Full tracking, 9-12 days delivery to Europe.</p></div>
         </div>
     </div>
 </main>
@@ -625,39 +575,15 @@
 <footer>
     <div class="container">
         <div class="footer-inner">
-            <div class="footer-col">
-                <h3 style="color: white;">Lian Gui Clothing</h3>
-                <p>Wholesale shirts with global shipping<br>Office & warehouse in Guangzhou</p>
-                <p><i class="fas fa-envelope"></i> 1277028772@qq.com</p>
-            </div>
-            <div class="footer-col">
-                <h4>Quick links</h4>
-                <p><a href="#products">Shirts collection</a></p>
-                <p><a href="#about">About & address</a></p>
-                <p><a href="#contact">Get a quote</a></p>
-                <p><a href="#policies">All policies</a></p>
-            </div>
-            <div class="footer-col">
-                <h4>Shipping partners</h4>
-                <p><i class="fab fa-dhl"></i> DHL Express</p>
-                <p><i class="fas fa-mail-bulk"></i> China Post</p>
-                <p><i class="fas fa-truck"></i> Customer-specified carriers</p>
-                <p><i class="fas fa-chart-line"></i> Fully tracked</p>
-            </div>
-            <div class="footer-col">
-                <h4>Address</h4>
-                <p>Room 301, 2nd Floor, No. 22 Fenghe Lujiang West Street,<br> Haizhu District, Guangzhou City, China</p>
-                <p>📧 1277028772@qq.com</p>
-            </div>
+            <div class="footer-col"><h3 style="color: white;">Lian Gui Clothing</h3><p>Wholesale shirts with global shipping<br>Office & warehouse in Guangzhou</p><p><i class="fas fa-envelope"></i> 1277028772@qq.com</p></div>
+            <div class="footer-col"><h4>Quick links</h4><p><a href="#products">Shirts collection</a></p><p><a href="#about">About & address</a></p><p><a href="#contact">Get a quote</a></p><p><a href="#policies">All policies</a></p></div>
+            <div class="footer-col"><h4>Shipping partners</h4><p><i class="fab fa-dhl"></i> DHL Express</p><p><i class="fas fa-mail-bulk"></i> China Post</p><p><i class="fas fa-truck"></i> Customer-specified carriers</p><p><i class="fas fa-chart-line"></i> Fully tracked</p></div>
+            <div class="footer-col"><h4>Address</h4><p>Room 301, 2nd Floor, No. 22 Fenghe Lujiang West Street,<br> Haizhu District, Guangzhou City, China</p><p>📧 1277028772@qq.com</p></div>
         </div>
-        <div class="copyright">
-            <p>&copy; 2025 Lian Gui Clothing – All rights reserved. | <a href="#policies" style="color:#c9dadf;">Privacy & Terms</a> | Designed for wholesale excellence</p>
-            <p style="margin-top: 8px;">📍 Europe-focused supplier – 9-12 days tracked delivery, DHL/Postal, flexible carrier options</p>
-        </div>
+        <div class="copyright"><p>&copy; 2025 Lian Gui Clothing – All rights reserved. | <a href="#policies" style="color:#c9dadf;">Privacy & Terms</a> | Designed for wholesale excellence</p><p>📍 Europe-focused supplier – 9-12 days tracked delivery, DHL/Postal, flexible carrier options</p></div>
     </div>
 </footer>
 
-<!-- smooth scroll JS and mailto notice -->
 <script>
     document.querySelectorAll('.nav-links a, .btn-primary[href^="#"], .btn-outline[href^="#"], .quote-btn').forEach(anchor => {
         anchor.addEventListener('click', function(e) {
@@ -665,18 +591,14 @@
             if(targetId && targetId.startsWith('#')) {
                 e.preventDefault();
                 const targetElement = document.querySelector(targetId);
-                if(targetElement) {
-                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
-                }
+                if(targetElement) targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
             }
         });
     });
     const mailForm = document.querySelector('form[action^="mailto:"]');
     if(mailForm) {
         mailForm.addEventListener('submit', function(e) {
-            setTimeout(() => {
-                alert("Your email client will open. If you prefer, you can also directly email us at 1277028772@qq.com . We’ll reply promptly.");
-            }, 10);
+            setTimeout(() => alert("Your email client will open. You can also email us directly at 1277028772@qq.com"), 10);
         });
     }
 </script>
