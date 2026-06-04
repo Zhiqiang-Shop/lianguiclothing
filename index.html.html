@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Lian Gui Clothing | Premium Wholesale Shirts Supplier for Europe</title>
+    <meta name="description" content="Lian Gui Clothing - professional wholesale shirts supplier based in Guangzhou. Fast DHL & postal shipping to Europe, full tracking, 9-12 days delivery. Contact us for bulk orders.">
+    <meta name="keywords" content="wholesale shirts, men shirts, women blouses, shirt supplier Europe, bulk order shirts, DHL shipping China">
+    <meta name="author" content="Lian Gui Clothing">
+    <!-- Google Fonts + Font Awesome -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,500;14..32,600;14..32,700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #ffffff;
+            color: #1a1e24;
+            line-height: 1.5;
+            scroll-behavior: smooth;
+        }
+
+        .container {
+            max-width: 1280px;
+            margin: 0 auto;
+            padding: 0 24px;
+        }
+
+        /* Header & Nav */
+        .navbar {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px 0;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .logo h1 {
+            font-size: 1.8rem;
+            font-weight: 700;
+            letter-spacing: -0.5px;
+            background: linear-gradient(135deg, #1f3b4c, #2c5a6e);
+            -webkit-background-clip: text;
+            background-clip: text;
+            color: transparent;
+        }
+        .logo span {
+            font-size: 0.85rem;
+            font-weight: 400;
+            color: #5f6c7a;
+            display: block;
+            letter-spacing: 0;
+        }
+
+        .nav-links {
+            display: flex;
+            gap: 32px;
+            list-style: none;
+        }
+        .nav-links a {
+            text-decoration: none;
+            font-weight: 500;
+            color: #2c3e44;
+            transition: 0.2s;
+        }
+        .nav-links a:hover {
+            color: #c97e3f;
+        }
+
+        /* Buttons & global */
+        .btn-primary {
+            background-color: #c97e3f;
+            color: white;
+            border: none;
+            padding: 12px 28px;
+            font-weight: 600;
+            border-radius: 40px;
+            cursor: pointer;
+            transition: 0.2s;
+            display: inline-block;
+            text-decoration: none;
+            font-size: 0.9rem;
+        }
+        .btn-primary:hover {
+            background-color: #ac6532;
+            transform: translateY(-2px);
+        }
+        .btn-outline {
+            background: transparent;
+            border: 1.5px solid #c97e3f;
+            color: #c97e3f;
+            padding: 10px 24px;
+            border-radius: 40px;
+            font-weight: 600;
+            text-decoration: none;
+            transition: 0.2s;
+            display: inline-block;
+        }
+        .btn-outline:hover {
+            background: #c97e3f;
+            color: white;
+        }
+        section {
+            padding: 70px 0;
+        }
+        .section-title {
+            font-size: 2rem;
+            font-weight: 700;
+            margin-bottom: 16px;
+            color: #1f3b4c;
+        }
+        .section-sub {
+            color: #5f6c7a;
+            max-width: 680px;
+            margin-bottom: 48px;
+        }
+
+        /* Hero */
+        .hero {
+            background: linear-gradient(120deg, #f9f6ef 0%, #f0ebe1 100%);
+            border-radius: 32px;
+            margin: 20px 0 20px;
+            padding: 60px 40px;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+            gap: 40px;
+        }
+        .hero-content {
+            flex: 1;
+        }
+        .hero-content h1 {
+            font-size: 3.2rem;
+            font-weight: 700;
+            line-height: 1.2;
+            color: #1f3b4c;
+        }
+        .hero-content p {
+            margin: 20px 0 30px;
+            font-size: 1.1rem;
+            color: #3a4c5a;
+        }
+        .hero-stats {
+            display: flex;
+            gap: 32px;
+            margin-top: 30px;
+        }
+        .hero-stats div strong {
+            font-size: 1.6rem;
+            color: #c97e3f;
+        }
+
+        /* Product Grid - 8 items now */
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+            gap: 32px;
+            margin-top: 20px;
+        }
+        .product-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 12px 28px rgba(0,0,0,0.04);
+            transition: 0.25s ease;
+            border: 1px solid #edece6;
+        }
+        .product-card:hover {
+            transform: translateY(-6px);
+            box-shadow: 0 20px 32px rgba(0,0,0,0.08);
+        }
+        .product-img {
+            width: 100%;
+            aspect-ratio: 3 / 4;
+            background-color: #eef2f0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #8f9b9e;
+            font-size: 0.85rem;
+            text-align: center;
+        }
+        .product-img img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .product-info {
+            padding: 20px;
+        }
+        .product-info h3 {
+            font-size: 1.2rem;
+            font-weight: 600;
+            margin-bottom: 8px;
+        }
+        .product-info p {
+            color: #5f6c7a;
+            font-size: 0.85rem;
+            margin-bottom: 16px;
+        }
+        .badge {
+            background: #f2e4d8;
+            color: #c97e3f;
+            font-size: 0.7rem;
+            font-weight: 600;
+            padding: 4px 10px;
+            border-radius: 20px;
+            display: inline-block;
+            margin-bottom: 12px;
+        }
+        .quote-btn {
+            background: none;
+            border: 1px solid #c97e3f;
+            color: #c97e3f;
+            padding: 8px 0;
+            width: 100%;
+            border-radius: 30px;
+            font-weight: 600;
+            cursor: pointer;
+            transition: 0.2s;
+        }
+        .quote-btn:hover {
+            background: #c97e3f;
+            color: white;
+        }
+
+        /* Features / Shipping Highlights */
+        .features {
+            background: #f8f7f3;
+            border-radius: 32px;
+        }
+        .features-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 32px;
+            justify-content: space-between;
+        }
+        .feature-item {
+            flex: 1;
+            min-width: 200px;
+            text-align: center;
+            padding: 20px;
+        }
+        .feature-item i {
+            font-size: 2.6rem;
+            color: #c97e3f;
+            margin-bottom: 16px;
+        }
+
+        /* Contact + Office */
+        .contact-wrapper {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 40px;
+            background: #ffffff;
+            border-radius: 32px;
+            box-shadow: 0 8px 24px rgba(0,0,0,0.02);
+        }
+        .contact-info, .contact-form {
+            flex: 1;
+            background: #fefcf8;
+            padding: 28px;
+            border-radius: 28px;
+        }
+        .info-line {
+            display: flex;
+            gap: 14px;
+            margin: 24px 0;
+            align-items: center;
+        }
+        .info-line i {
+            width: 32px;
+            color: #c97e3f;
+            font-size: 1.3rem;
+        }
+        .form-group {
+            margin-bottom: 20px;
+        }
+        input, textarea {
+            width: 100%;
+            padding: 12px 16px;
+            border: 1px solid #dddcd4;
+            border-radius: 24px;
+            font-family: inherit;
+            background: white;
+        }
+        textarea {
+            resize: vertical;
+        }
+        .policy-section {
+            background: #fefaf5;
+            border-radius: 32px;
+            margin-top: 20px;
+        }
+        .policy-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px,1fr));
+            gap: 28px;
+            margin-top: 32px;
+        }
+        .policy-card {
+            background: white;
+            border-radius: 24px;
+            padding: 24px;
+            box-shadow: 0 6px 12px rgba(0,0,0,0.02);
+            border: 1px solid #ece8e0;
+        }
+        .policy-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 16px;
+            color: #1f3b4c;
+        }
+        footer {
+            background: #1a2a2f;
+            color: #cfdde3;
+            padding: 48px 0 24px;
+            margin-top: 40px;
+        }
+        .footer-inner {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            gap: 32px;
+        }
+        .footer-col p, .footer-col a {
+            color: #b9c7ce;
+            text-decoration: none;
+            margin: 8px 0;
+        }
+        .footer-col a:hover {
+            color: #c97e3f;
+        }
+        .copyright {
+            text-align: center;
+            margin-top: 48px;
+            padding-top: 24px;
+            border-top: 1px solid #30434b;
+            font-size: 0.8rem;
+        }
+        @media (max-width: 768px) {
+            .navbar {
+                flex-direction: column;
+                text-align: center;
+            }
+            .nav-links {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 20px;
+            }
+            .hero {
+                flex-direction: column;
+                text-align: center;
+                padding: 40px 24px;
+            }
+            .hero-stats {
+                justify-content: center;
+            }
+            .section-title {
+                font-size: 1.8rem;
+            }
+        }
+        .shipping-note {
+            background: #eef5f0;
+            border-radius: 28px;
+            padding: 24px;
+            margin-top: 40px;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <div class="container">
+        <div class="navbar">
+            <div class="logo">
+                <h1>LIAN GUI CLOTHING</h1>
+                <span>Premium Shirts Wholesale · Global Supply</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#products">Shirts</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <li><a href="#policies">Policies</a></li>
+            </ul>
+            <a href="#contact" class="btn-primary">Request Quote <i class="fas fa-arrow-right"></i></a>
+        </div>
+    </div>
+</header>
+
+<main>
+    <!-- Hero -->
+    <div class="container" id="home">
+        <div class="hero">
+            <div class="hero-content">
+                <h1>Wholesale shirts crafted for European brands</h1>
+                <p>Premium quality, reliable shipping via DHL & Postal, 9-12 days delivery from Guangzhou to Europe. MOQ flexibility & full tracking.</p>
+                <a href="#products" class="btn-primary" style="margin-right: 12px;">Explore Collection</a>
+                <a href="#contact" class="btn-outline">Contact Sales</a>
+                <div class="hero-stats">
+                    <div><strong>9-12 days</strong><br>Express delivery</div>
+                    <div><strong>100%</strong><br>Trackable shipments</div>
+                    <div><strong>EU Focus</strong><br>Customs ready</div>
+                </div>
+            </div>
+            <div style="flex:0.7; min-width: 200px; background: #dfd8cd; border-radius: 28px; height: 260px; display: flex; align-items: center; justify-content: center; color: #4a5b62;">
+                <i class="fas fa-tshirt" style="font-size: 5rem; opacity: 0.6;"></i>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Section - now with 8 product cards (2 rows of 4 on desktop) -->
+    <div class="container" id="products">
+        <div class="section-title">Our premium shirt collection</div>
+        <div class="section-sub">High-quality fabrics, timeless designs — perfect for retail & wholesale. Click "Request Quote" for bulk pricing.</div>
+        <div class="product-grid">
+            <!-- Product 1 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://placehold.co/600x800/ECE6DE/8F7A62?text=Classic+Oxford" alt="Classic Oxford Shirt">
+                </div>
+                <div class="product-info">
+                    <span class="badge">Bestseller</span>
+                    <h3>Classic Oxford Shirt</h3>
+                    <p>100% cotton, wrinkle-resistant, 7 colors available.</p>
+                    <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://placehold.co/600x800/EAE3D9/7C6856?text=Linen+Summer" alt="Linen Summer Shirt">
+                </div>
+                <div class="product-info">
+                    <span class="badge">New</span>
+                    <h3>Linen Summer Shirt</h3>
+                    <p>Breathable European linen, relaxed fit.</p>
+                    <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://placehold.co/600x800/E6DFD3/947F68?text=Slim+Fit+Formal" alt="Slim Fit Formal">
+                </div>
+                <div class="product-info">
+                    <span class="badge">Popular</span>
+                    <h3>Slim Fit Dress Shirt</h3>
+                    <p>Non-iron, elegant cuffs, perfect for business.</p>
+                    <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
+                </div>
+            </div>
+            <!-- Product 4 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://placehold.co/600x800/DDD4C8/AA8F72?text=Casual+Check" alt="Casual Check Shirt">
+                </div>
+                <div class="product-info">
+                    <span class="badge">Trend</span>
+                    <h3>Check Casual Shirt</h3>
+                    <p>Soft brushed cotton, modern plaid.</p>
+                    <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
+                </div>
+            </div>
+            <!-- Product 5 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://placehold.co/600x800/F0E7DC/8C7762?text=Denim+Shirt" alt="Denim Shirt">
+                </div>
+                <div class="product-info">
+                    <span class="badge">Essential</span>
+                    <h3>Washed Denim Shirt</h3>
+                    <p>Versatile layer, durable indigo dye.</p>
+                    <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
+                </div>
+            </div>
+            <!-- Product 6 -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://placehold.co/600x800/E1D5C8/B4936E?text=Silk+Blouse" alt="Women's Silk Blouse">
+                </div>
+                <div class="product-info">
+                    <span class="badge">Exclusive</span>
+                    <h3>Silk Blend Blouse</h3>
+                    <p>Elegant drape, 5 pastel shades.</p>
+                    <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
+                </div>
+            </div>
+            <!-- Product 7 (NEW - added for symmetry) -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://placehold.co/600x800/D9CFC2/A88764?text=Striped+Business" alt="Striped Business Shirt">
+                </div>
+                <div class="product-info">
+                    <span class="badge">Office</span>
+                    <h3>Striped Business Shirt</h3>
+                    <p>Fine stripe pattern, easy iron, professional look.</p>
+                    <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
+                </div>
+            </div>
+            <!-- Product 8 (NEW - added for symmetry) -->
+            <div class="product-card">
+                <div class="product-img">
+                    <img src="https://placehold.co/600x800/CEC2B2/A37F60?text=Flannel+Warm" alt="Flannel Shirt">
+                </div>
+                <div class="product-info">
+                    <span class="badge">Winter</span>
+                    <h3>Flannel Heavy Shirt</h3>
+                    <p>Brushed cotton flannel, warm & cozy, perfect for autumn.</p>
+                    <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
+                </div>
+            </div>
+        </div>
+        <div style="text-align: center; margin-top: 40px;">
+            <p class="section-sub">* More styles & custom designs available — contact our wholesale team for full catalog.</p>
+        </div>
+    </div>
+
+    <!-- Features + shipping details -->
+    <div class="container features" style="margin-top: 20px;">
+        <div class="features-grid">
+            <div class="feature-item"><i class="fas fa-truck-fast"></i><h3>DHL & Postal Shipping</h3><p>Express 9-12 days to EU, fully tracked</p></div>
+            <div class="feature-item"><i class="fas fa-boxes"></i><h3>Custom Carrier</h3><p>Accept client-specified couriers (UPS, FedEx, etc.)</p></div>
+            <div class="feature-item"><i class="fas fa-globe-europe"></i><h3>Europe Focused</h3><p>VAT assistance, commercial invoice ready</p></div>
+            <div class="feature-item"><i class="fas fa-chart-line"></i><h3>Wholesale pricing</h3><p>Low MOQ & bulk discounts</p></div>
+        </div>
+    </div>
+
+    <!-- About + Office address -->
+    <div class="container" id="about">
+        <div class="section-title">Who we are</div>
+        <div class="section-sub">Lian Gui Clothing is a trusted shirt manufacturer and wholesaler based in Guangzhou, shipping premium apparel to Europe since 2012.</div>
+        <div class="contact-wrapper">
+            <div class="contact-info">
+                <h3><i class="fas fa-building"></i> Office & Warehouse</h3>
+                <div class="info-line"><i class="fas fa-map-marker-alt"></i> <span>Room 301, 2nd Floor, No. 22 Fenghe Lujiang West Street, Haizhu District, Guangzhou City, China</span></div>
+                <div class="info-line"><i class="fas fa-envelope"></i> <span><a href="mailto:1277028772@qq.com" style="color:#1f3b4c; text-decoration: none;">1277028772@qq.com</a></span></div>
+                <div class="info-line"><i class="fas fa-clock"></i> <span>Mon-Fri: 9:00 - 18:00 (GMT+8)</span></div>
+                <div class="info-line"><i class="fas fa-shipping-fast"></i> <span>DHL · China Post · Customer-specified carriers</span></div>
+                <div style="margin-top: 24px;"><strong>📦 Shipping time:</strong> 9-12 working days door-to-door with tracking.<br> <small>Fully trackable from China to any European address.</small></div>
+            </div>
+            <div class="contact-form" id="contact">
+                <h3>Request Wholesale Quote</h3>
+                <p>Tell us your requirements — we’ll reply within 24h.</p>
+                <form action="mailto:1277028772@qq.com" method="post" enctype="text/plain">
+                    <div class="form-group"><input type="text" name="name" placeholder="Full name *" required></div>
+                    <div class="form-group"><input type="email" name="email" placeholder="Email address *" required></div>
+                    <div class="form-group"><input type="text" name="company" placeholder="Company / Brand"></div>
+                    <div class="form-group"><textarea rows="4" name="message" placeholder="Tell us about your wholesale needs (styles, quantity, destination country)"></textarea></div>
+                    <button type="submit" class="btn-primary" style="width:100%">Send Inquiry <i class="fas fa-paper-plane"></i></button>
+                    <p style="font-size: 0.75rem; margin-top: 12px;">* By submitting, you agree to our privacy policy. Direct email via your client.</p>
+                </form>
+                <div style="margin-top: 18px; text-align: center;">Or email directly: <a href="mailto:1277028772@qq.com"><strong>1277028772@qq.com</strong></a></div>
+            </div>
+        </div>
+        <div class="shipping-note">
+            <i class="fas fa-truck" style="margin-right: 12px; color:#c97e3f;"></i> <strong>🚚 Shipping flexibility:</strong> We ship via DHL Express & China Post Air. If you prefer your own courier account (e.g., FedEx, UPS, DHL account), we gladly accept it. All shipments include online tracking number, 9-12 working days delivery from Guangzhou to most European countries. Customs & duties are buyer’s responsibility.
+        </div>
+    </div>
+
+    <!-- Policies section (all formal policies) -->
+    <div class="container" id="policies">
+        <div class="policy-section">
+            <div class="section-title">Official policies</div>
+            <div class="policy-grid">
+                <div class="policy-card">
+                    <h3>📦 Shipping policy</h3>
+                    <p><strong>Carriers:</strong> DHL Express, China Post Air Mail, or any client-specified courier (upon arrangement).<br>
+                    <strong>Delivery time:</strong> 9-12 working days after dispatch (tracking number provided).<br>
+                    <strong>Tracking:</strong> End-to-end tracking available via email notification.<br>
+                    <strong>Dispatch origin:</strong> Guangzhou, China.<br>
+                    <strong>International taxes:</strong> Buyers are responsible for any import duties/VAT applied by destination country.<br>
+                    For urgent orders, DHL express recommended. For customer-specified carriers, please contact our team to coordinate pickup/shipment.</p>
+                </div>
+                <div class="policy-card">
+                    <h3>🔄 Return & exchange</h3>
+                    <p>We stand behind quality. If you receive defective or wrong items, contact us within 14 days of delivery. Returns are accepted for manufacturing defects only. We do not accept returns for change of mind due to wholesale nature. Return shipping cost is covered by Lian Gui Clothing only when defect is verified. Prior to returning, a Return Authorization (RA) is required. Refunds or replacements processed within 7 business days after inspection.</p>
+                </div>
+                <div class="policy-card">
+                    <h3>🔒 Privacy policy (GDPR compliant)</h3>
+                    <p>We collect name, email, and address information solely for order processing, shipping, and communication. Your data is never sold to third parties. We use SSL encryption and secure servers. You have the right to request data deletion. For any inquiries, email <a href="mailto:1277028772@qq.com">1277028772@qq.com</a>. By using our website, you consent to this privacy policy.</p>
+                </div>
+                <div class="policy-card">
+                    <h3>📄 Terms of service</h3>
+                    <p>All wholesale orders are subject to our invoice terms. MOQ can be discussed based on style. Payments via T/T bank transfer, PayPal, or wire transfer. Prices exclude shipping costs. We reserve the right to update policies. Orders are confirmed upon written agreement. By placing an order, you accept our Terms of Service. Disputes governed by Guangzhou laws.</p>
+                </div>
+            </div>
+            <div style="margin-top: 32px; background:#F3F0EA; border-radius: 24px; padding: 20px;">
+                <p><strong>📞 Additional information:</strong> We support both DHL and Postal services, and we can also arrange shipments using your preferred carrier account (DHL, UPS, FedEx, etc). All packages are fully trackable from our warehouse to your doorstep. For any special request, please contact our team directly. European customers benefit from our streamlined customs documentation.</p>
+            </div>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <div class="container">
+        <div class="footer-inner">
+            <div class="footer-col">
+                <h3 style="color: white;">Lian Gui Clothing</h3>
+                <p>Wholesale shirts with global shipping<br>Office & warehouse in Guangzhou</p>
+                <p><i class="fas fa-envelope"></i> 1277028772@qq.com</p>
+            </div>
+            <div class="footer-col">
+                <h4>Quick links</h4>
+                <p><a href="#products">Shirts collection</a></p>
+                <p><a href="#about">About & address</a></p>
+                <p><a href="#contact">Get a quote</a></p>
+                <p><a href="#policies">All policies</a></p>
+            </div>
+            <div class="footer-col">
+                <h4>Shipping partners</h4>
+                <p><i class="fab fa-dhl"></i> DHL Express</p>
+                <p><i class="fas fa-mail-bulk"></i> China Post</p>
+                <p><i class="fas fa-truck"></i> Customer-specified carriers</p>
+                <p><i class="fas fa-chart-line"></i> Fully tracked</p>
+            </div>
+            <div class="footer-col">
+                <h4>Address</h4>
+                <p>Room 301, 2nd Floor, No. 22 Fenghe Lujiang West Street,<br> Haizhu District, Guangzhou City, China</p>
+                <p>📧 1277028772@qq.com</p>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 Lian Gui Clothing – All rights reserved. | <a href="#policies" style="color:#c9dadf;">Privacy & Terms</a> | Designed for wholesale excellence</p>
+            <p style="margin-top: 8px;">📍 Europe-focused supplier – 9-12 days tracked delivery, DHL/Postal, flexible carrier options</p>
+        </div>
+    </div>
+</footer>
+
+<!-- smooth scroll JS and mailto notice -->
+<script>
+    document.querySelectorAll('.nav-links a, .btn-primary[href^="#"], .btn-outline[href^="#"], .quote-btn').forEach(anchor => {
+        anchor.addEventListener('click', function(e) {
+            const targetId = this.getAttribute('href');
+            if(targetId && targetId.startsWith('#')) {
+                e.preventDefault();
+                const targetElement = document.querySelector(targetId);
+                if(targetElement) {
+                    targetElement.scrollIntoView({ behavior: 'smooth', block: 'start' });
+                }
+            }
+        });
+    });
+    const mailForm = document.querySelector('form[action^="mailto:"]');
+    if(mailForm) {
+        mailForm.addEventListener('submit', function(e) {
+            setTimeout(() => {
+                alert("Your email client will open. If you prefer, you can also directly email us at 1277028772@qq.com . We’ll reply promptly.");
+            }, 10);
+        });
+    }
+</script>
+</body>
+</html>
