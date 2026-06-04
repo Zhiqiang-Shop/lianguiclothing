@@ -156,8 +156,22 @@
             font-size: 1.6rem;
             color: #c97e3f;
         }
+        .hero-image {
+            flex: 0.7;
+            min-width: 200px;
+            height: 260px;
+            border-radius: 28px;
+            overflow: hidden;
+            background-color: #dfd8cd;
+        }
+        .hero-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            display: block;
+        }
 
-        /* Product Grid - 8 items now */
+        /* Product Grid - 8 items */
         .product-grid {
             display: grid;
             grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
@@ -186,11 +200,16 @@
             color: #8f9b9e;
             font-size: 0.85rem;
             text-align: center;
+            overflow: hidden;
         }
         .product-img img {
             width: 100%;
             height: 100%;
             object-fit: cover;
+            transition: transform 0.3s ease;
+        }
+        .product-card:hover .product-img img {
+            transform: scale(1.02);
         }
         .product-info {
             padding: 20px;
@@ -231,7 +250,7 @@
             color: white;
         }
 
-        /* Features / Shipping Highlights */
+        /* Features */
         .features {
             background: #f8f7f3;
             border-radius: 32px;
@@ -365,6 +384,10 @@
             .section-title {
                 font-size: 1.8rem;
             }
+            .hero-image {
+                width: 100%;
+                min-width: auto;
+            }
         }
         .shipping-note {
             background: #eef5f0;
@@ -396,7 +419,7 @@
 </header>
 
 <main>
-    <!-- Hero -->
+    <!-- Hero section with AAAA image -->
     <div class="container" id="home">
         <div class="hero">
             <div class="hero-content">
@@ -410,21 +433,21 @@
                     <div><strong>EU Focus</strong><br>Customs ready</div>
                 </div>
             </div>
-            <div style="flex:0.7; min-width: 200px; background: #dfd8cd; border-radius: 28px; height: 260px; display: flex; align-items: center; justify-content: center; color: #4a5b62;">
-                <i class="fas fa-tshirt" style="font-size: 5rem; opacity: 0.6;"></i>
+            <div class="hero-image">
+                <img src="images/AAAAjpg" alt="Lian Gui Clothing - Premium Shirt Manufacturer" onerror="this.onerror=null; this.src='https://placehold.co/600x800/dfd8cd/8F7A62?text=LIAN+GUI';">
             </div>
         </div>
     </div>
 
-    <!-- Product Section - now with 8 product cards (2 rows of 4 on desktop) -->
+    <!-- Product Section - 8 products with exact image names -->
     <div class="container" id="products">
         <div class="section-title">Our premium shirt collection</div>
         <div class="section-sub">High-quality fabrics, timeless designs — perfect for retail & wholesale. Click "Request Quote" for bulk pricing.</div>
         <div class="product-grid">
-            <!-- Product 1 -->
+            <!-- 1. Classic Oxford Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="https://placehold.co/600x800/ECE6DE/8F7A62?text=Classic+Oxford" alt="Classic Oxford Shirt">
+                    <img src="images/Classic Oxford Shirt.jpg" alt="Classic Oxford Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">Bestseller</span>
@@ -433,10 +456,10 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- Product 2 -->
+            <!-- 2. Linen Summer Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="https://placehold.co/600x800/EAE3D9/7C6856?text=Linen+Summer" alt="Linen Summer Shirt">
+                    <img src="images/Linen Summer Shirt.jpg" alt="Linen Summer Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">New</span>
@@ -445,10 +468,10 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- Product 3 -->
+            <!-- 3. Slim Fit Dress Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="https://placehold.co/600x800/E6DFD3/947F68?text=Slim+Fit+Formal" alt="Slim Fit Formal">
+                    <img src="images/Slim Fit Dress Shirt.jpg" alt="Slim Fit Dress Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">Popular</span>
@@ -457,10 +480,10 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- Product 4 -->
+            <!-- 4. Check Casual Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="https://placehold.co/600x800/DDD4C8/AA8F72?text=Casual+Check" alt="Casual Check Shirt">
+                    <img src="images/Check Casual Shirt.jpg" alt="Check Casual Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">Trend</span>
@@ -469,10 +492,10 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- Product 5 -->
+            <!-- 5. Washed Denim Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="https://placehold.co/600x800/F0E7DC/8C7762?text=Denim+Shirt" alt="Denim Shirt">
+                    <img src="images/Washed Denim Shirt.jpg" alt="Washed Denim Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">Essential</span>
@@ -481,10 +504,10 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- Product 6 -->
+            <!-- 6. Silk Blend Blouse -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="https://placehold.co/600x800/E1D5C8/B4936E?text=Silk+Blouse" alt="Women's Silk Blouse">
+                    <img src="images/Silk Blend Blouse.jpg" alt="Silk Blend Blouse">
                 </div>
                 <div class="product-info">
                     <span class="badge">Exclusive</span>
@@ -493,10 +516,10 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- Product 7 (NEW - added for symmetry) -->
+            <!-- 7. Striped Business Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="https://placehold.co/600x800/D9CFC2/A88764?text=Striped+Business" alt="Striped Business Shirt">
+                    <img src="images/Striped Business Shirt.jpg" alt="Striped Business Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">Office</span>
@@ -505,10 +528,10 @@
                     <button class="quote-btn" onclick="location.href='#contact'">Request Quote →</button>
                 </div>
             </div>
-            <!-- Product 8 (NEW - added for symmetry) -->
+            <!-- 8. Flannel Heavy Shirt -->
             <div class="product-card">
                 <div class="product-img">
-                    <img src="https://placehold.co/600x800/CEC2B2/A37F60?text=Flannel+Warm" alt="Flannel Shirt">
+                    <img src="images/Flannel Heavy Shirt.jpg" alt="Flannel Heavy Shirt">
                 </div>
                 <div class="product-info">
                     <span class="badge">Winter</span>
@@ -523,7 +546,7 @@
         </div>
     </div>
 
-    <!-- Features + shipping details -->
+    <!-- Features + shipping highlights -->
     <div class="container features" style="margin-top: 20px;">
         <div class="features-grid">
             <div class="feature-item"><i class="fas fa-truck-fast"></i><h3>DHL & Postal Shipping</h3><p>Express 9-12 days to EU, fully tracked</p></div>
